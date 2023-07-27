@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ChatServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-07-26T11:37:51" hostname="ARTEM_NOTEBOOK" time="0.564">
+<testsuite name="ChatServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-07-27T09:11:05" hostname="ARTEM_NOTEBOOK" time="0.627">
   <properties/>
-  <testcase name="testDeleteChat_Exception" classname="ChatServiceTest" time="0.048"/>
-  <testcase name="testDeleteMessage" classname="ChatServiceTest" time="0.482"/>
+  <testcase name="testDeleteChat_Exception" classname="ChatServiceTest" time="0.021"/>
+  <testcase name="testDeleteMessage" classname="ChatServiceTest" time="0.491"/>
   <testcase name="testGetLastMessages" classname="ChatServiceTest" time="0.006"/>
-  <testcase name="testGetMessagesFromChat" classname="ChatServiceTest" time="0.002"/>
+  <testcase name="testGetMessagesFromChat" classname="ChatServiceTest" time="0.071"/>
   <testcase name="testCreateChatAndSendMessage" classname="ChatServiceTest" time="0.001"/>
   <testcase name="testDeleteChat" classname="ChatServiceTest" time="0.0"/>
   <testcase name="testDeleteMessage_Exception" classname="ChatServiceTest" time="0.001"/>
-  <testcase name="testGetUnreadChats" classname="ChatServiceTest" time="0.018"/>
+  <testcase name="testGetUnreadChats" classname="ChatServiceTest" time="0.036"/>
   <system-out><![CDATA[[Chat(id=2, userIds=[1, 3], messages=[Message(id=1, text=Hi!, senderId=1, chatId=2, unread=true), Message(id=2, text=HelloHello!, senderId=1, chatId=2, unread=true)])]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
