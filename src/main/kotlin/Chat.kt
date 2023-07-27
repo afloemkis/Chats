@@ -35,7 +35,8 @@ class ChatService {
     // Получение списка сообщений из чата, начиная с заданного messageId
     fun getMessagesFromChat(userId: Int, chatId: Int, messageId: Int, count: Int): List<Message> {
         val chat = getChatById(chatId)
-        return chat.messages.filter { it.id >= messageId }.take(count).onEach  { it.unread = false } // Отмечаем сообщения как прочитанные
+        return chat.messages.asSequence()
+            .filter{ it.id >= messageId }.take(count).onEach  { it.unread = false }.toList() // Отмечаем сообщения как прочитанные
     }
 
     // Отправка сообщения
